@@ -30,13 +30,24 @@ export default function Home() {
       </p>
 
       {/* about me section */}
-      <section id = "about" className="max-w-2xl mt-12 px-4 text left">
+      <section id = "about" className="max-w-2xl mt-12 px-4 text-left">
         <h2 className="text-2xl font-bold mb-4 text-blue-700">About Me</h2>
         <p className = "text-white-700 text-lg leading-relaxed">
           Hey! I'm Alexis Navarro, a software Engineer with a  Master's degree in Software Engineering and a strong foundation in cybersecurity,
           backend/frontend development, and full-stack solutions. I've built scalable applications for Pacific Northwest National laboratory, DEVCOM, and tech startups such as Hiller Measurments,
           and I thrive in collaborative, agile environments.
         </p>
+
+        <section className="mt-8 max max-w-2xl text-left">
+          <h2 className="= "text-2xl font-semibold mb-4>Notable Tech Stack</h2>
+          <div className="flex flex-wrap gap-3">
+          {["Python", "Java","Typescript","React", "Node.js", "SQL", "AWS", "Docker", "MongoDB", "TypeScript", "PostgreSQL", "Git", "Jenkins", "Flask"].map((tech)=>(
+            <span key = {tech} className="bg-blue-600 px-3 py-1 rounded-full text-sm">
+              {tech}
+            </span>
+          ))}
+          </div>
+        </section>
       </section>
     </main>
   );
