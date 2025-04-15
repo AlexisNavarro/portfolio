@@ -39,7 +39,7 @@ export default function Home() {
         </p>
 
         <section className="mt-8 max max-w-2xl text-left">
-          <h2 className="= "text-2xl font-semibold mb-4>Notable Tech Stack</h2>
+          <h2 className= "text-2xl font-semibold mb-4">Notable Tech Stack</h2>
           <div className="flex flex-wrap gap-3">
           {["Python", "Java","Typescript","React", "Node.js", "SQL", "AWS", "Docker", "MongoDB", "TypeScript", "PostgreSQL", "Git", "Jenkins", "Flask"].map((tech)=>(
             <span key = {tech} className="bg-blue-600 px-3 py-1 rounded-full text-sm">
