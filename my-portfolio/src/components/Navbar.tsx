@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-end space-x-8">
         <Link href="/" className="hover:underline">Main Page</Link>
         <Link href="#education" className="hover:underline">Education</Link>
-        <Link href="#projects" className="hover:underline">Projects</Link>
+        <Link href="/experience" className="hover:underline">Experience</Link>
         <Link href="#contact" className="hover:underline">Contact</Link>
       </div>
     </nav>
