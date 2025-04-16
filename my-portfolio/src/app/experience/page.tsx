@@ -1,11 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 export default function ExperiencePage() {
   return (
     <main className="min-h-screen p-8 pt-20 text-center">
       <h1 className="text-4xl font-bold mb-8">Professional Experience</h1>
 
+      {/*Experience*/}
       <div className="mb-10 text-left max-w-3xl mx-auto">
+        <div className="flex items-center space-x-4">
+          {/*Hiller logo */}
+          <Image src="/logos/hiller_measurements_logo.jpg"
+            alt="Hiller Measurments Logo"
+            width={80}
+            height={80}
+            className="object-contain rounded-md" />
+        </div>
         <h2 className="text-2xl font-semibold">Hiller Measurements</h2>
         <p className="italic text-white-500">
           Backend Software Engineer Intern | May 2024 - Aug 2024
