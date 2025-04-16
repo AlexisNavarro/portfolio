@@ -26,6 +26,31 @@ export default function ExperiencePage() {
           <li>Documented backend systems to cut onboarding time in half</li>
         </ul>
       </div>
+
+
+      <div className="mb-10 text-left max-w-3xl mx-auto">
+        <div className="flex items-center space-x-4">
+          {/*PNNL logo */}
+          <div className="bg-white p-2 rounded-md shadow-md">
+
+            <Image src="/logos/pnnl_logo.webp"
+              alt="Hiller Measurments Logo"
+              width={80}
+              height={80}
+              className="object-contain rounded-md" />
+          </div>
+
+        </div>
+        <h2 className="text-2xl font-semibold">Pacific Northwest National Laboratory</h2>
+        <p className="italic text-white-500">
+          Full Stack Software Engineer | Summer 2023
+        </p>
+        <ul className="list-disc list-inside mt-2 text-white-700">
+          <li>Built front-end features using TypeScript, HTML, and CSS</li>
+          <li>Collaborated with researchers to visualize climate data</li>
+          <li>Delivered fully tested components in an agile team</li>
+        </ul>
+      </div>
     </main>
   );
 }
