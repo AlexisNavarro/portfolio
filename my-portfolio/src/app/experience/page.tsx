@@ -20,14 +20,31 @@ export default function ExperiencePage() {
         </div>
         <h2 className="text-2xl font-semibold">Hiller Measurements</h2>
         <p className="italic text-white-500">
-          Backend Software Engineer Intern | May 2024 - Aug 2024
+          Backend Software Engineer and Database Management | May 2024 - Aug 2024
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
-          <li>Optimized SQL database performance by 60%</li>
-          <li>Implemented Python automation scripts and REST APIs</li>
-          <li>Documented backend systems to cut onboarding time in half</li>
+          <li>Optimized SQL database performance by 60% and boosted query efficiency by 70%</li>
+          <li>Collaborated with cross-functional teams in an Agile enviroment</li>
+          <li>Built REST APIs and backend scripts in Python; achieving 100% test coverage</li>
+          <li>Reduced onboarding time by 80% with clear technical docs in Figma & MS Office</li>
+          <li>Learned proper coding standards and utilization of Git for version control within a large team</li>
         </ul>
+        <h2 className="text-lg font-medium mt-4 mb-4">Technologies Used</h2>
+        <div className="flex flex-wrap gap-3">
+          {[
+            "DBeaver", "Docker", "Git", "Gitlab", "Node.js",
+            "Python", "React", "RESTful APIs", "SQL",
+            "SQLAlchemy", "TypeScript", "JIRA", "Agile"
+          ].map((tech) => (
+            <span key={tech} className="bg-blue-600 px-3 py-1 rounded-full text-sm">
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
+
+
+
 
       {/*PNNL Section*/}
 
@@ -46,7 +63,7 @@ export default function ExperiencePage() {
         </div>
         <h2 className="text-2xl font-semibold">Pacific Northwest National Laboratory</h2>
         <p className="italic text-white-500">
-          Full Stack Software Engineer | Summer 2023
+          Full Stack Software Engineer | August 2023 - December 2023
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
           <li>Built front-end features using TypeScript, HTML, and CSS</li>
@@ -69,9 +86,9 @@ export default function ExperiencePage() {
             className="object-contain rounded-md" />
 
         </div>
-        <h2 className="text-2xl font-semibold">Pacific Northwest National Laboratory</h2>
+        <h2 className="text-2xl font-semibold">Devcom</h2>
         <p className="italic text-white-500">
-          Full Stack Software Engineer | Summer 2023
+          Full Stack Software Engineer | January 2022 – December 2022
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
           <li>Built front-end features using TypeScript, HTML, and CSS</li>
