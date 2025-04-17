@@ -4,7 +4,10 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   const profilePic = "/Alexis_Navarro_Pic.jpg"
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center pt-20">
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center pt-20 bg-cover bg-center"
+    style={{backgroundImage: 'url("/backgrounds/test_background2.webp'}}
+    >
+
       <Navbar />
 
       {/*Profile Picture aka Alexis */}
@@ -31,10 +34,10 @@ export default function Home() {
 
       {/* about me section */}
       <section id = "about" className="max-w-2xl mt-12 px-4 text-left">
-        <h2 className="text-2xl font-bold mb-4 text-blue-700">About Me</h2>
+        <h2 className="text-2xl font-bold mb-4 text-white-700">About Me</h2>
         <p className = "text-white-700 text-lg leading-relaxed">
           Hey! I'm Alexis Navarro, a software Engineer with a  Master's degree in Software Engineering and a strong foundation in cybersecurity,
-          backend/frontend development, and full-stack solutions. I've built scalable applications for Pacific Northwest National laboratory, DEVCOM, and tech startups such as Hiller Measurments,
+          backend/frontend development, and full-stack solutions. I've built scalable applications for Pacific Northwest National laboratory, DEVCOM, and tech startups such as Hiller Measurements,
           and I thrive in collaborative, agile environments.
         </p>
 
