@@ -7,6 +7,8 @@ export default function ExperiencePage() {
       <h1 className="text-4xl font-bold mb-8">Professional Experience</h1>
 
       {/*Experience*/}
+
+      {/*Hiller Measurements Section*/}
       <div className="mb-10 text-left max-w-3xl mx-auto">
         <div className="flex items-center space-x-4">
           {/*Hiller logo */}
@@ -27,6 +29,7 @@ export default function ExperiencePage() {
         </ul>
       </div>
 
+      {/*PNNL Section*/}
 
       <div className="mb-10 text-left max-w-3xl mx-auto">
         <div className="flex items-center space-x-4">
@@ -34,7 +37,7 @@ export default function ExperiencePage() {
           <div className="bg-white p-2 rounded-md shadow-md">
 
             <Image src="/logos/pnnl_logo.webp"
-              alt="Hiller Measurments Logo"
+              alt="Pacfic Northwest National Laboratory Logo"
               width={80}
               height={80}
               className="object-contain rounded-md" />
@@ -51,6 +54,33 @@ export default function ExperiencePage() {
           <li>Delivered fully tested components in an agile team</li>
         </ul>
       </div>
+
+
+      {/*Devcom Section*/}
+
+      <div className="mb-10 text-left max-w-3xl mx-auto">
+        <div className="flex items-center space-x-4">
+          {/*Devcom logo */}
+
+          <Image src="/logos/devcom_logo.webp"
+            alt="Hiller Measurments Logo"
+            width={80}
+            height={80}
+            className="object-contain rounded-md" />
+
+        </div>
+        <h2 className="text-2xl font-semibold">Pacific Northwest National Laboratory</h2>
+        <p className="italic text-white-500">
+          Full Stack Software Engineer | Summer 2023
+        </p>
+        <ul className="list-disc list-inside mt-2 text-white-700">
+          <li>Built front-end features using TypeScript, HTML, and CSS</li>
+          <li>Collaborated with researchers to visualize climate data</li>
+          <li>Delivered fully tested components in an agile team</li>
+        </ul>
+      </div>
+
+
     </main>
   );
 }
