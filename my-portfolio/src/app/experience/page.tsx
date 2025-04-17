@@ -3,7 +3,9 @@ import Image from "next/image";
 
 export default function ExperiencePage() {
   return (
-    <main className="min-h-screen p-8 pt-20 text-center">
+    <main className="min-h-screen p-8 pt-20 text-center bg-cover bg-center"
+    style={{backgroundImage: 'url("/backgrounds/background.webp")'}}
+    >
       <h1 className="text-4xl font-bold mb-8">Professional Experience</h1>
 
       {/*Experience*/}
