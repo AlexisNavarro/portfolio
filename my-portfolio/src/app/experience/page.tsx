@@ -25,11 +25,13 @@ export default function ExperiencePage() {
           Backend Software Engineer and Database Management | May 2024 - Aug 2024
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
-          <li>Optimized SQL database performance by 60% and boosted query efficiency by 70%</li>
-          <li>Collaborated with cross-functional teams in an Agile enviroment</li>
-          <li>Built REST APIs and backend scripts in Python; achieving 100% test coverage</li>
-          <li>Reduced onboarding time by 80% with clear technical docs in Figma & MS Office</li>
-          <li>Learned proper coding standards and utilization of Git for version control within a large team</li>
+          <li>Enhanced SQL database performance by 60% and improved query efficiency by 70% through strategic optimization</li>
+          <li>Partnered with cross-functional teams in an Agile environment to align backend solutions with project objectives</li>
+          <li>Facilitated regular stakeholder meetings to provide backend progress updates and ensure transparency</li>
+          <li>Developed and maintained robust REST APIs and backend scripts in Python with 100% test coverage</li>
+          <li>Accelerated new hire onboarding by 80% through comprehensive technical documentation in Figma and MS Office</li>
+          <li>Adhered to industry coding standards and employed Git for scalable, team-based version control</li>
+          <li>Led efforts in unit and integration testing, delivering well-documented and reliable API endpoints</li>
         </ul>
 
         <h2 className="text-lg font-medium mt-4 mb-4">Technologies Used</h2>
@@ -37,7 +39,7 @@ export default function ExperiencePage() {
           {[
             "DBeaver", "Docker", "Git", "Gitlab", "Node.js",
             "Python", "React", "RESTful APIs", "SQL",
-            "SQLAlchemy", "Pandas", "TypeScript", "JIRA", "Agile", "Figma", "MS Office"
+            "SQLAlchemy", "Pandas", "TypeScript", "JIRA", "Agile", "Figma", "MS Office", "Unit Testing", "Integration Testing"
           ].map((tech) => (
             <span key={tech} className="bg-blue-600 px-3 py-1 rounded-full text-sm">
               {tech}
@@ -69,13 +71,14 @@ export default function ExperiencePage() {
           Full Stack Software Engineer | August 2023 - December 2023
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
-          <li>Collaborated with Master's students to develop a new version of Home Assistant in an Agile environment</li>
-          <li>Built front-end features using React, TypeScript, HTML, and CSS</li>
-          <li>Developed 50 backend functions with Python and Node.js</li>
-          <li>Designed 30+ SQL schemas to meet evolving team and application requirements</li>
-          <li>Migrated legacy records to AWS RDS, enhancing database security by 80%</li>
-          <li>Configured AWS IAM for role-based access controls</li>
-          <li>Delivered fully tested features as part of an Agile development team</li>
+          <li>Collaborated with graduate-level peers to modernize the Home Assistant platform within an Agile framework</li>
+          <li>Presented weekly project updates to stakeholders and implemented feedback to guide product development</li>
+          <li>Delivered polished front-end components using React, TypeScript, HTML, and CSS to enhance user experience</li>
+          <li>Built over 50 backend functions in Python and Node.js to support application scalability and performance</li>
+          <li>Engineered 30+ SQL schemas to accommodate evolving project requirements and ensure data integrity</li>
+          <li>Migrated legacy data to AWS RDS, significantly improving database security and reliability</li>
+          <li>Configured AWS IAM to enforce secure, role-based access management across the platform</li>
+          <li>Consistently met delivery timelines by producing fully tested features within Agile sprints</li>
         </ul>
 
         <h2 className="text-lg font-medium mt-4 mb-4">Technologies Used</h2>
@@ -108,13 +111,31 @@ export default function ExperiencePage() {
         </div>
         <h2 className="text-2xl font-semibold">Devcom</h2>
         <p className="italic text-white-500">
-          Full Stack Software Engineer | January 2022 – December 2022
+          Full Stack Software Engineer | January 2022 - December 2022
         </p>
         <ul className="list-disc list-inside mt-2 text-white-700">
-          <li>Built front-end features using TypeScript, HTML, and CSS</li>
-          <li>Collaborated with researchers to visualize climate data</li>
-          <li>Delivered fully tested components in an agile team</li>
+          <li>Co-led the development of a custom CAN Bus application alongside a team of undergraduate engineers</li>
+          <li>Engaged in bi-weekly meetings with clients to demonstrate progress and capture actionable feedback</li>
+          <li>Oversaw Agile processes including standups, sprint planning, and peer code reviews to maintain velocity</li>
+          <li>Provided mentorship in React and Next.js, supporting consistent UI/UX across the application</li>
+          <li>Architected and implemented a RESTful API using Python and Flask to support backend functionality</li>
+          <li>Introduced Git workflow standards, enhancing code collaboration and reducing integration issues by 90%</li>
+          <li>Established automated CI/CD pipelines via Jenkins, Docker, and Kubernetes to accelerate deployments by 80%</li>
+          <li>Engineered a MongoDB solution to manage real-time status data for 700+ military vehicle components, improving system reliability and decision-making efficiency</li>
         </ul>
+
+
+        <h2 className="text-lg font-medium mt-4 mb-4">Technologies Used</h2>
+        <div className="flex flex-wrap gap-3">
+        {[
+    "React", "Next.js", "Python", "Flask", "MongoDB",
+    "RESTful APIs", "Git", "Jenkins", "Docker", "Kubernetes", "Agile"
+  ].map((tech) => (
+            <span key={tech} className="bg-blue-600 px-3 py-1 rounded-full text-sm">
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
 
 
