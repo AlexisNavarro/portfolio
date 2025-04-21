@@ -3,7 +3,9 @@ import Image from "next/image";
 
 export default function educationPage() {
     return (
-        <main className="min-h-screen p-8 pt-20 text-center bg-cover bg-center">
+        <main className="min-h-screen p-8 pt-20 text-center bg-cover bg-center"
+        style={{ backgroundImage: 'url("/backgrounds/education_background2.jpg")' }}
+        >
             <h1 className=" text-4xl font-bold mb-8">Education</h1>
 
             {/*Masters */}
