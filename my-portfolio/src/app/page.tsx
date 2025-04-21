@@ -5,7 +5,7 @@ export default function Home() {
   const profilePic = "/Alexis_Navarro_Pic.jpg"
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center pt-20 bg-cover bg-center"
-    style={{backgroundImage: 'url("/backgrounds/test_background2.webp'}}
+    style={{backgroundImage: 'url("/backgrounds/home_background3.jpg'}}
     >
 
       <Navbar />
