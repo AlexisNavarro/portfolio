@@ -1,4 +1,4 @@
-# Alexis Navarro portfolio
+# Alexis Navarro Portfolio
 A personal website to showcase my education, experience, and projects as a software engineer.
 
 ## Description
