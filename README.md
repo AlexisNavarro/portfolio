@@ -5,7 +5,7 @@ A personal website to showcase my education, experience, and projects as a softw
 This project is my personal portfolio site, built to present who I am as a developer—highlighting my background in software engineering, cybersecurity, and full-stack development.
 
 ## Tech Stack
-- **Languages:** TypeScript  
+- **Languages:** TypeScript, JavaScript
 - **Frameworks/Libraries:** React, Next.js
 - **Styling:** Tailwind CSS
 
