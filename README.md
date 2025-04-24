@@ -6,8 +6,9 @@ This project is my personal portfolio site, built to present who I am as a devel
 
 ## Tech Stack
 - **Languages:** TypeScript, JavaScript
-- **Frameworks/Libraries:** React, Next.js
-- **Styling:** Tailwind CSS
+- **Frameworks/Libraries:** React 19, Next.js 15
+- **Styling:** Tailwind CSS 4
+- **Tooling:** ESLint, Turbopack, TypeScript, PostCSS
 
 ## Installation
 
