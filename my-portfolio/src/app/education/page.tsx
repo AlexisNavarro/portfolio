@@ -13,30 +13,63 @@ export default function EducationPage() {
 
         {/* Reusable Education Card */}
         {[{
-            logo: "/logos/utep_logo.png",
-            alt: "University of Texas at El Paso Logo",
-            institution: "The University of Texas at El Paso",
-            degree: "Master of Science in Software Engineering - Secure Cyber-Systems",
-            date: "Graduated: May 2024 | GPA 3.90",
-            bullets: [
-              "Concentration in Secure Cyber-Systems",
-              "Accepted into Fast Track Program during undergraduate studies (Aug 2022)",
-              "Attended Great Minds in STEM for the fifth consecutive year",
-              "Placed 10th out of 90 teams in GMiS Hackathon, Pasadena, California"
-            ],
-          },
-          {
-            logo: "/logos/utep_logo.png", 
-            alt: "University of Texas at El Paso Logo",
-            institution: "The University of Texas at El Paso",
-            degree: "Bachelor of Science in Computer Science - Software Engineering",
-            date: "Graduated: May 2022 | GPA 3.35",
-            bullets: [
-              "Minor in Mathematics",
-              "S-STEM Scholarship Recipient (2018-2022)",
-              "Completed undergraduate capstone on secure data communication"
-            ]
-          }
+          logo: "/logos/utep_logo.png",
+          alt: "University of Texas at El Paso Logo",
+          institution: "The University of Texas at El Paso",
+          degree: "Master of Science in Software Engineering - Secure Cyber-Systems",
+          date: "Graduated: May 2024 | GPA 3.90",
+          bullets: [
+            "Specialized in Secure Cyber-Systems",
+            "Admitted to UTEP's Fast Track Program during undergrad (Aug 2022)",
+            "Collaborated with Pacific Northwest National Laboratory to develop a custom Home Assistant version as part of Capstone",
+            "Awarded 2nd place in a Reverse Engineering Cybersecurity Hackathon",
+            "Attended Great Minds in STEM Conference for five consecutive years",
+            "Placed 10th out of 90 teams in GMiS Cybersecurity Hackathon (Pasadena, CA)"
+          ],
+          courses: [
+            "Software Engineering Practicum",
+            "Software Requirements Engineering",
+            "Software Project Management",
+            "Software Architecture and Design",
+            "Secure Web-based Systems",
+            "Computer Networks",
+            "Software Reverse Engineering",
+            "Computer Security",
+          ],
+        },
+        {
+          logo: "/logos/utep_logo.png",
+          alt: "University of Texas at El Paso Logo",
+          institution: "The University of Texas at El Paso",
+          degree: "Bachelor of Science in Computer Science - Software Engineering",
+          date: "Graduated: May 2022 | GPA 3.35",
+          bullets: [
+            "Earned a Minor in Mathematics",
+            "Focused on software engineering within the CS program",
+            "Awarded the S-STEM Scholarship (2018–2022)",
+            "Completed Capstone project with U.S. Army DEVCOM to design a CAN Bus System",
+            "Co-founded and served as Treasurer of UTEP Miner Robotics",
+            "Attended Great Minds in STEM for four consecutive years, expanding professional network",
+            "Placed 27th out of 115 teams in GMiS Cybersecurity Hackathon (Pasadena, CA)"
+          ],
+          courses: [
+            "Intro to Computer Science",
+            "Problem Solving & Algorithms",
+            "Elem. Data Struct./Algorithms",
+            "Calculus 1-3",
+            "Discrete Mathematics",
+            "Data Structures",
+            "Matrix Algebra",
+            "Introductory Mechanics",
+            "Adv. Object-Oriented Programming",
+            "Comp Arch I: Comp Org/Design",
+            "Theory of Operating Systems",
+            "Data Base Management",
+            "Software Eng: Requirements Eng",
+            "Software Eng: Design & Implmnt",
+            "Software Integration and V&V"
+          ],
+        }
         ].map((edu, idx) => (
           <div
             key={idx}
@@ -60,7 +93,23 @@ export default function EducationPage() {
               {edu.bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
+
             </ul>
+            {edu.courses && edu.courses.length > 0 && (
+              <>
+                <h3 className="text-lg font-semibold mt-4 text-white-300">Relevant Courses:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {edu.courses.map((course) => (
+                    <span
+                      key={course}
+                      className="bg-blue-700 px-3 py-1 rounded-full text-xs"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         ))}
 
