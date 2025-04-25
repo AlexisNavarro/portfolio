@@ -46,7 +46,7 @@ export default function EducationPage() {
           bullets: [
             "Earned a Minor in Mathematics",
             "Focused on software engineering within the CS program",
-            "Awarded the S-STEM Scholarship (2018–2022)",
+            "Awarded the S-STEM Scholarship (2018-2022)",
             "Completed Capstone project with U.S. Army DEVCOM to design a CAN Bus System",
             "Co-founded and served as Treasurer of UTEP Miner Robotics",
             "Attended Great Minds in STEM for four consecutive years, expanding professional network",
@@ -89,26 +89,32 @@ export default function EducationPage() {
               </div>
             </div>
 
+            {/*education bullet points context */ }
             <ul className="list-disc list-inside text-gray-100 space-y-1 pl-5">
               {edu.bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
 
+            {/**courses */}
             </ul>
             {edu.courses && edu.courses.length > 0 && (
-              <>
-                <h3 className="text-lg font-semibold mt-4 text-white-300">Relevant Courses:</h3>
-                <div className="flex flex-wrap gap-2">
-                  {edu.courses.map((course) => (
+              <details className="mt-4">
+
+                {/**drop down */}
+                <summary className="cursor-pointer font-semibold text-white underline mb-2">
+                  Relevant Courses
+                </summary>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {edu.courses.map((course, i) => (
                     <span
-                      key={course}
-                      className="bg-blue-700 px-3 py-1 rounded-full text-xs"
+                      key={i}
+                      className="bg-blue-700 text-white text-sm px-3 py-1 rounded-full shadow-sm"
                     >
                       {course}
                     </span>
                   ))}
                 </div>
-              </>
+              </details>
             )}
           </div>
         ))}
