@@ -37,7 +37,7 @@ export default function EducationPage() {
             "Computer Security",
           ],
           techs: [
-            "Python", "Java", "SQL", "Typescript", "React", "C", "Kotlin","Websockets",
+            "Python", "Java", "SQL", "AWS","Typescript", "React", "C", "Kotlin","Websockets",
             "Git", "Docker", "Kubernetes", "Agile", "Integration Testing", "Unit Testing",
             "Next.js", "Bash", "Linux", "TCP/IP", "Assembly", "Kali Linux"
           ]
@@ -75,8 +75,8 @@ export default function EducationPage() {
             "Software Integration and V&V"
           ],
           techs: [
-            "Python", "Java", "SQL", "MongoDB", "React", "Flask", "Spring Boot","Javascript", "Go", "C",
-            "Git", "Docker", "Kubernetes", "Agile", "Integration Testing", "Unit Testing",
+            "Python", "Java", "SQL", "PostgreSQL", "MongoDB", "React", "Flask", "Spring Boot","Javascript", "Go", "C",
+            "Git", "Jenkins", "Docker", "Kubernetes", "Agile", "Integration Testing", "Unit Testing",
             "Next.js", "Websockets", "Dart", "PHP", "Linux", "Bash", "TCP/IP", "Kali Linux"
           ],
         }
