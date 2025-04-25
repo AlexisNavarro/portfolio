@@ -2,13 +2,24 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    //first line will fix the navbar to the top of the screen everytime
-    <nav className="bg-blue-600 text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="max-w-7xl mx-auto flex justify-end space-x-8">
-        <Link href="/" className="hover:underline">Main Page</Link>
-        <Link href="/education" className="hover:underline">Education</Link>
-        <Link href="/experience" className="hover:underline">Experience</Link>
-        <Link href="#contact" className="hover:underline">Contact</Link>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md shadow-md">
+      <div className="max-w-7xl mx-auto flex justify-end items-center px-5 py-4">
+        <div className="flex space-x-8">
+          {[
+            { href: "/", label: "Main Page" },
+            { href: "/education", label: "Education" },
+            { href: "/experience", label: "Experience" },
+            { href: "/contact", label: "Contact" },
+          ].map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="text-white font-medium hover:text-blue-300 transition duration-200 px-3 py-1 rounded-md hover:bg-white/10"
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );
