@@ -36,6 +36,11 @@ export default function EducationPage() {
             "Software Reverse Engineering",
             "Computer Security",
           ],
+          techs: [
+            "Python", "Java", "SQL", "Typescript", "React", "C", "Kotlin","Websockets",
+            "Git", "Docker", "Kubernetes", "Agile", "Integration Testing", "Unit Testing",
+            "Next.js", "Bash", "Linux", "TCP/IP", "Assembly", "Kali Linux"
+          ]
         },
         {
           logo: "/logos/utep_logo.png",
@@ -69,6 +74,11 @@ export default function EducationPage() {
             "Software Eng: Design & Implmnt",
             "Software Integration and V&V"
           ],
+          techs: [
+            "Python", "Java", "SQL", "MongoDB", "React", "Flask", "Spring Boot","Javascript", "Go", "C",
+            "Git", "Docker", "Kubernetes", "Agile", "Integration Testing", "Unit Testing",
+            "Next.js", "Websockets", "Dart", "PHP", "Linux", "Bash", "TCP/IP", "Kali Linux"
+          ],
         }
         ].map((edu, idx) => (
           <div
@@ -89,14 +99,16 @@ export default function EducationPage() {
               </div>
             </div>
 
-            {/*education bullet points context */ }
+            {/*education bullet points context */}
             <ul className="list-disc list-inside text-gray-100 space-y-1 pl-5">
               {edu.bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
 
-            {/**courses */}
             </ul>
+
+            {/**courses */}
+
             {edu.courses && edu.courses.length > 0 && (
               <details className="mt-4">
 
@@ -111,6 +123,28 @@ export default function EducationPage() {
                       className="bg-blue-700 text-white text-sm px-3 py-1 rounded-full shadow-sm"
                     >
                       {course}
+                    </span>
+                  ))}
+                </div>
+              </details>
+            )}
+
+
+            {/**courses */}
+            {edu.techs && edu.techs.length > 0 && (
+              <details className="mt-4">
+
+                {/**drop down */}
+                <summary className="cursor-pointer font-semibold text-white underline mb-2">
+                  Relevant Tech
+                </summary>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {edu.techs.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-blue-700 text-white text-sm px-3 py-1 rounded-full shadow-sm"
+                    >
+                      {tech}
                     </span>
                   ))}
                 </div>
