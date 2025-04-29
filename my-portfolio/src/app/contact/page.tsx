@@ -16,26 +16,46 @@ export default function ContactPage() {
 
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Email</h2>
-                    <a href="mailto:navarroalexis007@gmail.com" className="text-black hover:underline">
-                        navarroalexis007@gmail.com
+                    <div className="flex items-center space-x-4 justify-start">
+                    <Image src="/logos/email_icon.png" alt="Email Icon" width={50} height={50} />
+
+                    <a
+                    href="mailto:navarroalexis007@gmail.com"
+                    target="_blank"
+                    className="text-black hover:underline">
+                    navarroalexis007@gmail.com
                     </a>
+                    </div>
                 </div>
 
                 {/**linkedin */}
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Linkedin</h2>
-                    <a href="https://www.linkedin.com/in/AlexisNavarro99" target="_blank" className="text-black hover:underline">
-                        linkedin.com/in/AlexisNavarro99
-                    </a>
+                    <div className="flex items-center space-x-4 justify-start">
+                        <Image src="/logos/linkedin-logo.jpg" alt="Linkedin Logo" width={50} height={50} />
+                        <a
+                            href="https://www.linkedin.com/in/AlexisNavarro99"
+                            target="_blank"
+                            className="text-black hover:underline">
+                            linkedin.com/in/AlexisNavarro99
+                        </a>
+                    </div>
                 </div>
 
                 {/**Github */}
 
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Github</h2>
-                    <a href="https://github.com/AlexisNavarro" target="_blank" className="text-black hover:underline">
-                        navarroalexis007@gmail.com
+                    <div className="flex items-center space-x-4 justify-start">
+                    <Image src="/logos/GitHub-Logo.png" alt="Gihub Logo" width={50} height={50} />
+
+                    <a
+                    href="https://github.com/AlexisNavarro"
+                    target="_blank"
+                    className="text-black hover:underline">
+                    navarroalexis007@gmail.com
                     </a>
+                    </div>
                 </div>
 
                 <div className=" flex items-center space-x-4 justify-center">
