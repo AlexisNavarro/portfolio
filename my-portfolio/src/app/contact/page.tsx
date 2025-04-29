@@ -13,18 +13,17 @@ export default function ContactPage() {
             <div className="max-w-2xl mx-auto space-y-10 bg-white/20 backdrop-blur-md p-10 rounded-2xl shadow-xl text-white">
 
                 {/**email */}
-
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Email</h2>
                     <div className="flex items-center space-x-4 justify-start">
-                    <Image src="/logos/email_icon.png" alt="Email Icon" width={50} height={50} />
+                        <Image src="/logos/email_icon.png" alt="Email Icon" width={50} height={50} />
 
-                    <a
-                    href="mailto:navarroalexis007@gmail.com"
-                    target="_blank"
-                    className="text-black hover:underline">
-                    navarroalexis007@gmail.com
-                    </a>
+                        <a
+                            href="mailto:navarroalexis007@gmail.com"
+                            target="_blank"
+                            className="text-black hover:underline">
+                            navarroalexis007@gmail.com
+                        </a>
                     </div>
                 </div>
 
@@ -43,21 +42,21 @@ export default function ContactPage() {
                 </div>
 
                 {/**Github */}
-
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Github</h2>
                     <div className="flex items-center space-x-4 justify-start">
-                    <Image src="/logos/GitHub-Logo.png" alt="Gihub Logo" width={50} height={50} />
+                        <Image src="/logos/GitHub-Logo.png" alt="Gihub Logo" width={50} height={50} />
 
-                    <a
-                    href="https://github.com/AlexisNavarro"
-                    target="_blank"
-                    className="text-black hover:underline">
-                    navarroalexis007@gmail.com
-                    </a>
+                        <a
+                            href="https://github.com/AlexisNavarro"
+                            target="_blank"
+                            className="text-black hover:underline">
+                            navarroalexis007@gmail.com
+                        </a>
                     </div>
                 </div>
 
+                {/**Downloads */}
                 <div className=" flex items-center space-x-4 justify-center">
                     <Download className="text-blue-300" size={30} />
                     <a
@@ -68,13 +67,7 @@ export default function ContactPage() {
                         Download Resume
                     </a>
                 </div>
-
-
-
-
             </div>
-
         </main>
-
     );
 }
