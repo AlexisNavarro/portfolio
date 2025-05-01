@@ -14,7 +14,9 @@ export default function ProjectPage() {
                 {[
                     {
                         project_name: "Portfolio",
-                        description: "My portfolio that will be used to show case my experience, education, and project done over my software career.",
+                        description: "This portfolio website was designed and developed using Next.js and Tailwind CSS to showcase my technical skills, experience, and personal projects in a clean and responsive layout.",
+                        role: "Frontend Developer",
+                        highlights:["Responsive Design", "Modern UI", "Fast Performance", "Downloadable Resume"],
                         tech: ["React", "next.js", "Typescript", "Tailwind CSS", "Git", "Github"],
                         github_link: "https://github.com/AlexisNavarro/portfolio",
                     }
@@ -27,6 +29,20 @@ export default function ProjectPage() {
                         <div>
                             <h2 className="text-2xl font-semibold">{proj.project_name}</h2>
                             <p className="italic text-sm text-black">{proj.description}</p>
+                        </div>
+
+                        <p className="text-sm text-white">
+                            <span className="font-semibold text-blue-800">Role:</span>{proj.role}
+                        </p>
+
+                        <div>
+                            <h3 className="text-lg font-medium mb-1 text-blue-800">Highlights</h3>
+                            <ul className="list-disc list-inside text-white text-sm">
+                                {proj.highlights.map((item,index)=>(
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+
                         </div>
 
                         <h3 className="text-lg font-medium mt-4 mb-2 text-blue-800">Tech Stack</h3>
