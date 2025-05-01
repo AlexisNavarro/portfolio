@@ -37,36 +37,45 @@ export default function ProjectPage() {
 
                         {/**role */}
                         <div className="mt-3">
-
                             <h3 className="flex items-center gap-2 text-blue-800 font-medium">
-                                <User className="w-4 h-4"/>
-                                Role:
+                                <User className="w-4 h-4" />
+                                    Role:
                             </h3>
-                            <p className="=text-white">{proj.role}</p>
+                            <p className="text-white">{proj.role}</p>
                         </div>
 
                         {/**Highlights */}
                         <div>
-                            <h3 className="text-lg font-medium mb-1 text-blue-800">Highlights</h3>
-                            <ul className="list-disc list-inside text-white text-sm">
+                            <h3 className=" flex items-center gap-2 text-blue-800 font-medium">
+                                <Star className="w-4 h-4" />
+                                    Highlights
+                            </h3>
+                            <ul className="mt-1 space-y-1">
                                 {proj.highlights.map((item, index) => (
-                                    <li key={index}>{item}</li>
+                                    <li key={index} className="flex items-center gap-2 text-sm">
+                                        {item}
+                                    </li>
                                 ))}
                             </ul>
-
                         </div>
 
                         {/**tech stack */}
-                        <h3 className="text-lg font-medium mt-4 mb-2 text-blue-800">Tech Stack</h3>
-                        <div className="flex flex-wrap gap-2">
-                            {proj.tech.map((tech) => (
-                                <span
-                                    key={tech}
-                                    className="bg-blue-700 px-3 py-1 rounded-full texxt-xs"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
+                        <div className="mt-4">
+                            <h3 className="flex items-center gap-2 text-blue-800 font-medium">
+                                <Code className="w-4 h-4" />
+                                Tech Stack
+                            </h3>
+                            <div className="flex flex-wrap gap-2">
+                                {proj.tech.map((tech) => (
+                                    <span
+                                        key={tech}
+                                        className="bg-blue-700 px-3 py-1 rounded-full texxt-xs"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
                         </div>
 
                         {/**Github */}
