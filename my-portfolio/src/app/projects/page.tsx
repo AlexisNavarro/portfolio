@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { Code, Star, User } from "lucide-react";
+
 
 export default function ProjectPage() {
     return (
@@ -16,7 +18,7 @@ export default function ProjectPage() {
                         project_name: "Portfolio",
                         description: "This portfolio website was designed and developed using Next.js and Tailwind CSS to showcase my technical skills, experience, and personal projects in a clean and responsive layout.",
                         role: "Frontend Developer",
-                        highlights:["Responsive Design", "Modern UI", "Fast Performance", "Downloadable Resume"],
+                        highlights: ["Responsive Design", "Modern UI", "Fast Performance", "Downloadable Resume"],
                         tech: ["React", "next.js", "Typescript", "Tailwind CSS", "Git", "Github"],
                         github_link: "https://github.com/AlexisNavarro/portfolio",
                     }
@@ -24,27 +26,37 @@ export default function ProjectPage() {
 
                     <div
                         key={idx}
-                        className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-md text-left">
+                        className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-md text-left text-white transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                    >
 
+                        {/*proj name and description*/}
                         <div>
                             <h2 className="text-2xl font-semibold">{proj.project_name}</h2>
-                            <p className="italic text-sm text-black">{proj.description}</p>
+                            <p className="italic text-sm text-white">{proj.description}</p>
                         </div>
 
-                        <p className="text-sm text-white">
-                            <span className="font-semibold text-blue-800">Role:</span>{proj.role}
-                        </p>
+                        {/**role */}
+                        <div className="mt-3">
 
+                            <h3 className="flex items-center gap-2 text-blue-800 font-medium">
+                                <User className="w-4 h-4"/>
+                                Role:
+                            </h3>
+                            <p className="=text-white">{proj.role}</p>
+                        </div>
+
+                        {/**Highlights */}
                         <div>
                             <h3 className="text-lg font-medium mb-1 text-blue-800">Highlights</h3>
                             <ul className="list-disc list-inside text-white text-sm">
-                                {proj.highlights.map((item,index)=>(
+                                {proj.highlights.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
 
                         </div>
 
+                        {/**tech stack */}
                         <h3 className="text-lg font-medium mt-4 mb-2 text-blue-800">Tech Stack</h3>
                         <div className="flex flex-wrap gap-2">
                             {proj.tech.map((tech) => (
@@ -57,6 +69,7 @@ export default function ProjectPage() {
                             ))}
                         </div>
 
+                        {/**Github */}
                         <div>
                             <a href={proj.github_link}
                                 target="_blank"
