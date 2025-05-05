@@ -6,7 +6,7 @@ import { Code, Star, User } from "lucide-react";
 export default function ProjectPage() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center pt-20 bg-cover bg-center"
-            style={{ backgroundImage: 'url("/backgrounds/projects_background.jpg' }}>
+            style={{ backgroundImage: 'url("/backgrounds/projects_background3.jpg' }}>
 
             <h1 className="text-4xl font-bold mb-12 drop-shadow-lg">Projects</h1>
 
@@ -22,7 +22,6 @@ export default function ProjectPage() {
                         tech: ["React", "next.js", "Typescript", "Tailwind CSS", "Git", "Github"],
                         github_link: "https://github.com/AlexisNavarro/portfolio",
                     },
-
                     {
                         project_name: "CAN BUS Visualizer",
                         description: "This project allows users to visualize the status of various vehicle components over the CAN bus and store the data in a database for tracking and analysis. Developed using Python with Flask, it integrates frameworks like Pyvis for network visualization and provides an intuitive user interface for real-time monitorings",
@@ -30,6 +29,17 @@ export default function ProjectPage() {
                         highlights: ["Real-time Data Visualization", "Database Integration for Historical Tracking", "Interactive Network Graphs (Pyvis)", "Restful API Support"],
                         tech: ["Python", "Flask", "Pyvis", "JavaScript", "HTML", "CSS", "Git", "Github"],
                         github_link: "https://github.com/aavenzornav/CS4311_CANBusVisualizer_2/tree/master",
+                    },
+                    {
+                        project_name: "MSP430 Blinky Toy",
+                        description:  "Developed an interactive toy using the MSP430 microcontroller programmed in C and assembly. The system features dynamic LED patterns, sound generation, and state-based transitions using button inputs. Implemented a state machine for mode management and integrated low-level assembly for performance-critical functionality.",
+                        role: "Embedded Systems Developer",
+                        highlights: [  "Dynamic LED Control",
+                            "Sound Generation via Timer Interrupts",
+                            "Finite State Machine Design",
+                            "Assembly-Based State Transitions"],
+                        tech: ["C", "Assembly", "MSP430", "EMACS", "Git", "Github"],
+                        github_link: "https://github.com/AlexisNavarro/MSP430-Blinky-Toy/tree/main",
                     }
                 ].map((proj, idx) => (
 
