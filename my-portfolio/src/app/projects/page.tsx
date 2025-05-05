@@ -31,6 +31,19 @@ export default function ProjectPage() {
                         github_link: "https://github.com/aavenzornav/CS4311_CANBusVisualizer_2/tree/master",
                     },
                     {
+                        project_name: "OpenFlow Network Controller Lab",
+                        description: "Built a custom software-defined network using the POX controller and OpenFlow protocol. Established host-to-host communication and implemented rule-based packet filtering to control network traffic flow. Demonstrated programmable network behavior and dynamic flow control using Python scripts.",
+                        role: "Network Engineer (SDN Focus)",
+                        highlights: [
+                            "Custom Traffic Flow Rules",
+                            "Host-to-Host Communication",
+                            "Rule-Based Packet Filtering",
+                            "Software-Defined Networking (SDN)"
+                        ],
+                        tech: ["Python", "OpenFlow", "POX Controller", "Mininet", "Git", "Github"],
+                        github_link: "https://github.com/AlexisNavarro/networks-lab3",
+                    },
+                    {
                         project_name: "MSP430 Blinky Toy",
                         description:  "Developed an interactive toy using the MSP430 microcontroller programmed in C and assembly. The system features dynamic LED patterns, sound generation, and state-based transitions using button inputs. Implemented a state machine for mode management and integrated low-level assembly for performance-critical functionality.",
                         role: "Embedded Systems Developer",
