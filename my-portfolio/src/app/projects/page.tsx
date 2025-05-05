@@ -21,6 +21,15 @@ export default function ProjectPage() {
                         highlights: ["Responsive Design", "Modern UI", "Fast Performance", "Downloadable Resume"],
                         tech: ["React", "next.js", "Typescript", "Tailwind CSS", "Git", "Github"],
                         github_link: "https://github.com/AlexisNavarro/portfolio",
+                    },
+
+                    {
+                        project_name: "CAN BUS Visualizer",
+                        description: "This project allows users to visualize the status of various vehicle components over the CAN bus and store the data in a database for tracking and analysis. Developed using Python with Flask, it integrates frameworks like Pyvis for network visualization and provides an intuitive user interface for real-time monitorings",
+                        role: "Full Stack Developer",
+                        highlights: ["Real-time Data Visualization", "Database Integration for Historical Tracking", "Interactive Network Graphs (Pyvis)", "Restful API Support"],
+                        tech: ["Python", "Flask", "Pyvis", "JavaScript", "HTML", "CSS", "Git", "Github"],
+                        github_link: "https://github.com/aavenzornav/CS4311_CANBusVisualizer_2/tree/master",
                     }
                 ].map((proj, idx) => (
 
