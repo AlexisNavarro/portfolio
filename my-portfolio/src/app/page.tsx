@@ -35,9 +35,9 @@ export default function Home() {
       <section id="about" className="max-w-2xl mt-12 px-4 text-left">
         <h2 className="text-2xl font-bold mb-4 text-white-700">About Me</h2>
         <p className="text-white-700 text-lg leading-relaxed">
-          Hey! I'm Alexis Navarro, a software Engineer with a  Master's degree in Software Engineering and a strong foundation in cybersecurity,
-          backend/frontend development, and full-stack solutions. I've built scalable applications for Pacific Northwest National laboratory, DEVCOM, and tech startups such as Hiller Measurements,
-          and I thrive in collaborative, agile environments.
+          Hello! I'm Alexis Navarro, a U.S. citizen and proud Hispanic software engineer with a Master's degree in Software Engineering from the University of Texas at El Paso. I also earned my Bachelor's degree there, majoring in Computer Science with a concentration in Software Engineering and a minor in Mathematics.
+          <br /><br />
+          I have hands-on experience building scalable full-stack applications in both government and private sectors, having contributed to impactful projects at Pacific Northwest National Laboratory, DEVCOM, and startups like Hiller Measurements. My strengths lie in backend and frontend development, cybersecurity practices, and collaborating in fast-paced, Agile environments. I'm passionate about using technology to solve real-world problems and continuously improving both my technical and team skills.
         </p>
 
         <section className="mt-8 max max-w-2xl text-left">
