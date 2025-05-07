@@ -51,7 +51,7 @@ export default function ContactPage() {
                             href="https://github.com/AlexisNavarro"
                             target="_blank"
                             className="text-black hover:underline">
-                            navarroalexis007@gmail.com
+                            github.com/AlexisNavarro
                         </a>
                     </div>
                 </div>
@@ -67,6 +67,9 @@ export default function ContactPage() {
                         Download Resume
                     </a>
                 </div>
+
+                <p className="mt-4 text-sm text-white-600 italic">Let's connect or collaborate!</p>
+
             </div>
         </main>
     );
