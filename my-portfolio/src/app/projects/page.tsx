@@ -58,7 +58,7 @@ export default function ProjectPage() {
 
                     <div
                         key={idx}
-                        className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-md text-left text-white transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                        className="bg-black/70 text-gray-100 p-6 rounded-2xl shadow-md text-left text-white transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
                     >
 
                         {/*proj name and description*/}
@@ -69,7 +69,7 @@ export default function ProjectPage() {
 
                         {/**role */}
                         <div className="mt-3">
-                            <h3 className="flex items-center gap-2 text-blue-800 font-medium">
+                            <h3 className="flex items-center gap-2 text-blue-400 font-medium">
                                 <User className="w-4 h-4" />
                                     Role:
                             </h3>
@@ -78,7 +78,7 @@ export default function ProjectPage() {
 
                         {/**Highlights */}
                         <div>
-                            <h3 className=" flex items-center gap-2 text-blue-800 font-medium">
+                            <h3 className=" flex items-center gap-2 text-blue-400 font-medium">
                                 <Star className="w-4 h-4" />
                                     Highlights
                             </h3>
@@ -93,7 +93,7 @@ export default function ProjectPage() {
 
                         {/**tech stack */}
                         <div className="mt-4">
-                            <h3 className="flex items-center gap-2 text-blue-800 font-medium">
+                            <h3 className="flex items-center gap-2 text-blue-400 font-medium">
                                 <Code className="w-4 h-4" />
                                 Tech Stack
                             </h3>
