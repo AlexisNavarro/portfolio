@@ -21,6 +21,7 @@ export default function ExperiencePage() {
             title: "Backend Software Engineer and Database Management",
             date: "May 2024 - Aug 2024",
             bullets: [
+              "Actively contributed to Agile sprints by sharing updates and deliverables related to backend development and database design",
               "Enhanced SQL database performance by 60% and improved query efficiency by 70% through strategic optimization",
               "Partnered with cross-functional teams in an Agile environment to align backend solutions with project objectives",
               "Facilitated regular stakeholder meetings to provide backend progress updates and ensure transparency",
@@ -50,6 +51,7 @@ export default function ExperiencePage() {
               "Migrated legacy data to AWS RDS, significantly improving database security and reliability",
               "Configured AWS IAM to enforce secure, role-based access management across the platform",
               "Consistently met delivery timelines by producing fully tested features within Agile sprints",
+              "Resolved 100+ issues related to application security vulnerabilities and performance inefficiencies",
             ],
             tech: [
               "AWS", "AWS-RDS", "AWS-IAM", "Git", "Node.js", "Python", "React",
