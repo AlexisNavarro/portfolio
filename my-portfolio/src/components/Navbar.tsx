@@ -9,6 +9,7 @@ export default function Navbar() {
             { href: "/", label: "Main Page" },
             { href: "/education", label: "Education" },
             { href: "/experience", label: "Experience" },
+            { href: "/projects", label: "Projects" },
             { href: "/contact", label: "Contact" },
           ].map(({ href, label }) => (
             <Link
