@@ -68,7 +68,7 @@ export default function ContactPage() {
                     </a>
                 </div>
 
-                <p className="mt-4 text-sm text-white-600 italic">Let's connect or collaborate!</p>
+                <p className="mt-4 text-sm text-white-600 italic">Let&apos;s connect or collaborate!</p>
 
             </div>
         </main>
