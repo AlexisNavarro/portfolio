@@ -5,7 +5,7 @@ import { Code, Star, User } from "lucide-react";
 export default function ProjectPage() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center pt-20 bg-cover bg-center"
-            style={{ backgroundImage: 'url("/backgrounds/projects_background3.jpg' }}>
+            style={{ backgroundImage: 'url("/backgrounds/projects_background3.jpg")' }}>
 
             <h1 className="text-4xl font-bold mb-12 drop-shadow-lg">Projects</h1>
 
@@ -44,9 +44,9 @@ export default function ProjectPage() {
                     },
                     {
                         project_name: "MSP430 Blinky Toy",
-                        description:  "Developed an interactive toy using the MSP430 microcontroller programmed in C and assembly. The system features dynamic LED patterns, sound generation, and state-based transitions using button inputs. Implemented a state machine for mode management and integrated low-level assembly for performance-critical functionality.",
+                        description: "Developed an interactive toy using the MSP430 microcontroller programmed in C and assembly. The system features dynamic LED patterns, sound generation, and state-based transitions using button inputs. Implemented a state machine for mode management and integrated low-level assembly for performance-critical functionality.",
                         role: "Embedded Systems Developer",
-                        highlights: [  "Dynamic LED Control",
+                        highlights: ["Dynamic LED Control",
                             "Sound Generation via Timer Interrupts",
                             "Finite State Machine Design",
                             "Assembly-Based State Transitions"],
@@ -70,7 +70,7 @@ export default function ProjectPage() {
                         <div className="mt-3">
                             <h3 className="flex items-center gap-2 text-blue-400 font-medium">
                                 <User className="w-4 h-4" />
-                                    Role:
+                                Role:
                             </h3>
                             <p className="text-white">{proj.role}</p>
                         </div>
@@ -79,7 +79,7 @@ export default function ProjectPage() {
                         <div>
                             <h3 className=" flex items-center gap-2 text-blue-400 font-medium">
                                 <Star className="w-4 h-4" />
-                                    Highlights
+                                Highlights
                             </h3>
                             <ul className="mt-1 space-y-1">
                                 {proj.highlights.map((item, index) => (
