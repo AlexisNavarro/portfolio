@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Alexis Navarro | Home Page",
+  description: "Official portfolio website of Alexis Navarro showcasing projects, skills, and experience.",
+};
+
 export default function Home() {
   const profilePic = "/Alexis_Navarro_Pic.jpg";
   return (
