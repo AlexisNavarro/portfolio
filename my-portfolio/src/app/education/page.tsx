@@ -1,6 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Education | Alexis Navarro",
+  description:
+    "Learn about Alexis Navarro's academic background, including a Master's in Software Engineering and a Bachelor's in Computer Science from UTEP.",
+};
+
+
 export default function EducationPage() {
   return (
     <main
