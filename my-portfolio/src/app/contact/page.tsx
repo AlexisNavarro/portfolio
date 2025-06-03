@@ -2,6 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { Download } from "lucide-react";
 
+export const metadata = {
+  title: "Contact | Alexis Navarro",
+  description:
+    "Get in touch with Alexis Navarro for software engineering opportunities, collaborations, or inquiries.",
+};
+
 
 export default function ContactPage() {
     return (
