@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Experience | Alexis Navarro",
+  description:
+    "Discover Alexis Navarro's professional journey, featuring software engineering roles at national labs, government agencies, and startups.",
+};
+
 export default function ExperiencePage() {
   return (
     <main
