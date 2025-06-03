@@ -1,6 +1,12 @@
 import React from "react";
 import { Code, Star, User } from "lucide-react";
 
+export const metadata = {
+  title: "Projects | Alexis Navarro",
+  description:
+    "Explore software engineering projects by Alexis Navarro, showcasing full-stack applications, CAN bus visualizations, embedded systems, and more.",
+};
+
 
 export default function ProjectPage() {
     return (
