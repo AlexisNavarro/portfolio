@@ -2,9 +2,9 @@ import React from "react";
 import { Code, Star, User } from "lucide-react";
 
 export const metadata = {
-  title: "Projects | Alexis Navarro",
-  description:
-    "Explore software engineering projects by Alexis Navarro, showcasing full-stack applications, CAN bus visualizations, embedded systems, and more.",
+    title: "Projects | Alexis Navarro",
+    description:
+        "Explore software engineering projects by Alexis Navarro, showcasing full-stack applications, CAN bus visualizations, embedded systems, and more.",
 };
 
 
@@ -26,6 +26,14 @@ export default function ProjectPage() {
                         highlights: ["Responsive Design", "Modern UI", "Fast Performance", "Downloadable Resume"],
                         tech: ["React", "next.js", "Typescript", "Tailwind CSS", "Git", "Github"],
                         github_link: "https://github.com/AlexisNavarro/portfolio",
+                    },
+                    {
+                        project_name: "Scientific Calculator",
+                        description: "A fully functional scientific calculator that performs arithmetic operations and plots mathematical equations in real-time. It includes a persistent history feature backed by a local SQL database, allowing users to review previous calculations.",
+                        role: "Full-Stack Developer",
+                        highlights: ["Real-Time Plotting", "Persistent Calculation History", "Responsive Design"],
+                        tech: ["React", "Typescript", "CSS", "SQL", "Git", "Github"],
+                        github_link: "https://github.com/AlexisNavarro/calculator_react"
                     },
                     {
                         project_name: "CAN BUS Visualizer",
